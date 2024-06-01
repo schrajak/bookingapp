@@ -44,7 +44,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"name\":\"Hotel Kubíček\"\r\n}",
+							"raw": "{\r\n    \"name\":\"asdasdasd updated\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -52,7 +52,7 @@
 							}
 						},
 						"url": {
-							"raw": "localhost:8800/api/hotels/65c8f078f6c38333725f75db",
+							"raw": "localhost:8800/api/hotels/65c8fe29394c6ca142339e1d",
 							"host": [
 								"localhost"
 							],
@@ -60,7 +60,7 @@
 							"path": [
 								"api",
 								"hotels",
-								"65c8f078f6c38333725f75db"
+								"65c8fe29394c6ca142339e1d"
 							]
 						}
 					},
@@ -70,15 +70,50 @@
 					"name": "GetHotel",
 					"request": {
 						"method": "GET",
-						"header": []
+						"header": [],
+						"url": {
+							"raw": "localhost:8800/api/hotels/65c8fe29394c6ca142339e1d",
+							"host": [
+								"localhost"
+							],
+							"port": "8800",
+							"path": [
+								"api",
+								"hotels",
+								"65c8fe29394c6ca142339e1d"
+							]
+						}
 					},
 					"response": []
 				},
 				{
 					"name": "GetAllHotels",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
 					"request": {
 						"method": "GET",
-						"header": []
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8800/api/hotels",
+							"host": [
+								"localhost"
+							],
+							"port": "8800",
+							"path": [
+								"api",
+								"hotels"
+							]
+						}
 					},
 					"response": []
 				},
@@ -163,8 +198,29 @@
 				{
 					"name": "Update user",
 					"request": {
-						"method": "GET",
-						"header": []
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\": \"admin\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8800/api/users/65da573734b672747b97825c",
+							"host": [
+								"localhost"
+							],
+							"port": "8800",
+							"path": [
+								"api",
+								"users",
+								"65da573734b672747b97825c"
+							]
+						}
 					},
 					"response": []
 				},
@@ -175,7 +231,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"title\":\"Prezidentský pokoj\",\r\n    \"desc\": \"Bydlí zde jenom prezident\",\r\n    \"price\": 100,\r\n    \"maxPeople\":2,\r\n    \"roomNumbers\": [{\"number\":101}, {\"number\":102}]\r\n\r\n}",
+							"raw": "{\r\n    \"title\":\"Prezidentský pokoj\",\r\n    \"desc\": \"Bydlí zde jenom prezident\",\r\n    \"price\": 100,\r\n    \"maxPeople\":2,\r\n    \"roomNumber\": [{\"number\":101}, {\"number\":102}]\r\n\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -218,14 +274,16 @@
 				"method": "DELETE",
 				"header": [],
 				"url": {
-					"raw": "localhost:8800/api/65e3954c66e182ee5f3bc76c",
+					"raw": "localhost:8800/api/rooms/65e399e34fa7cb06a4318889/65c8fe29394c6ca142339e1d",
 					"host": [
 						"localhost"
 					],
 					"port": "8800",
 					"path": [
 						"api",
-						"65e3954c66e182ee5f3bc76c"
+						"rooms",
+						"65e399e34fa7cb06a4318889",
+						"65c8fe29394c6ca142339e1d"
 					]
 				}
 			},
